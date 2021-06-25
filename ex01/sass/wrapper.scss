@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  background-color: white;
+}
+
+.wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px 30px;
+}
+.logo {
+  &__link {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+    padding: 10px 20px;
+  }
+  &__link:hover {
+    background-color: rgb(136, 139, 132);
+  }
+  &__link p {
+    display: inline-block;
+    font-weight: 300;
+  }
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  &__link {
+    color: black;
+    font-size: 18px;
+    line-height: 1.4;
+    padding: 10px 20px;
+  }
+  &__link:hover {
+    background-color: rgb(136, 139, 132);
+  }
+}
+.banner {
+  position: relative;
+  &__img {
+  }
+  &__img img {
+    margin: 0 auto;
+  }
+  &__name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    & span {
+      color: white;
+      font-size: 40px;
+      font-weight: 600;
+      padding: 10px 10px;
+      display: inline-block;
+      line-height: 1.4;
+    }
+  }
+  &__desc {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: black;
+    line-height: 1.4;
+  }
+}
+.project {
+  & {
+    min-width: 100%;
+  }
+  &__caption {
+    margin: 90px 0;
+  }
+  &__heading {
+    color: #000;
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    //  justify-content: space-between; // phan nay su dung se be nen han che
+    position: relative;
+  }
+  &__item {
+    margin: 5px;
+    width: 24%;
+  }
+  &__img {
+    width: 360px;
+    height: 235px;
+    object-fit: cover;
+  }
+  &__name {
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    line-height: 1.4;
+    background-color: #000;
+  }
+}
+.about {
+  &__info {
+    margin: 40px 0;
+  }
+  &__heading {
+    margin-bottom: 60px;
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  &__desc {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 24%;
+    margin: 5px;
+    height: auto;
+  }
+  &__img {
+    object-fit: cover;
+  }
+  &__name {
+    font-size: 24px;
+    line-height: 1.4;
+    margin: 10px 0;
+  }
+  &__position {
+    font-size: 14px;
+    color: darkgray;
+    line-height: 1.4;
+  }
+  &__content {
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: justify;
+    margin: 10px 0;
+  }
+  &__button {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+  }
+}
+.contact {
+  &__info {
+    margin: 40px 0;
+  }
+  &__heading {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  &__desc {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  &__form {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  &__group {
+    width: 100%;
+  }
+  &__input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid darkgray;
+    border-radius: 4px;
+    margin: 10px 0;
+  }
+  &__button {
+    text-align: center;
+    color: white;
+    background-color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border: none;
+  }
+  &__button:hover {
+    color: #000;
+    background-color: darkgrey;
+    border: none;
+  }
+}
+.map {
+  & {
+    margin: 10px 0;
+  }
+  &__img {
+    object-fit: cover;
+  }
+}
+.footer {
+  & {
+    background-color: #000;
+  }
+  &__column {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  &__heading {
+    color: white;
+    font-size: 14px;
+    margin-right: 5px;
+  }
+  &__link {
+    color: white;
+    font-size: 14px;
+  }
+  &__link:hover {
+    color: green;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .wrapper {
+  }
+  .project {
+    &__list {
+      justify-content: center;
+    }
+    &__item {
+      width: 47%;
+      margin: 10px;
+    }
+    &__img {
+      width: 100%;
+    }
+  }
+  .about {
+    &__list {
+      justify-content: center;
+    }
+    &__item {
+      width: 47%;
+      height: auto;
+      margin: 10px;
+    }
+    &__img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .project {
+    &__list {
+      justify-content: center;
+    }
+    &__item {
+      width: 97%;
+      margin: 10px;
+    }
+    &__img {
+      width: 100%;
+    }
+  }
+  .about {
+    &__list {
+      justify-content: center;
+    }
+    &__item {
+      width: 97%;
+      height: auto;
+      margin: 10px;
+    }
+    &__img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+  .header__nav {
+    display: none;
+  }
+  .banner__name span {
+    display: none;
+  }
+}

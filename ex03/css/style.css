@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.display {
+  background: url("../img/forestbridge.jpg") no-repeat center center/cover;
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+}
+.display__top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.display__top h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  padding: 20px;
+}
+.display__middlae {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.display__desc {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 300;
+  text-align: center;
+}
+.display-animate {
+  position: relative;
+  animation: animatetop 0.4s;
+}
+.display__border {
+  color: #fff;
+  width: 40%;
+  margin: 0 auto;
+}
+.display__day {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+.display__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+}
+.display__footer {
+  color: #fff;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 200;
+}
+.display__link {
+  color: #fff;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.4;
+  margin-left: 5px;
+}
+
+@keyframes animatetop {
+  from {
+    top: 0;
+  }
+  to {
+    top: 100px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
