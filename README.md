@@ -1,4 +1,4 @@
-<p align="center"><img src="https://lh3.googleusercontent.com/proxy/OH6lKeJ-i7jEe2aoDqYLuNG_IHUaid8UAwrgWsgp-vGtev6o0sJ_Dp88yd6TeC1iReG-kosnwi7-4LTrV8Oq6Edht3p8R-fi_v8G65ZqnkRVIPRK_HDxhGFkIMgMPEX5"></p>
+<p align="center"><a href="https://www.w3schools.com/css/css_rwd_templates.asp" target="_blank"><img src="https://user-images.githubusercontent.com/86486093/123506861-892d1580-d690-11eb-8216-8e1854771c24.png" width="400"></a></p>
 
 # HTML&CSS - SASS & Responsive Web Design - Media Queries
 
@@ -15,6 +15,10 @@ Exercise :
 - ex03
   ```
      https://www.w3schools.com/w3css/tryw3css_templates_coming_soon.htm
+  ```
+- ex04
+  ```
+     https://www.w3schools.com/w3css/tryw3css_templates_band.htm
   ```
 
 
